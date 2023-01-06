@@ -12,7 +12,7 @@ const sequelize = new Sequelize(env.DB_NAME, env.DB_USERNAME, env.DB_PASSWORD, {
   logging: false
 });
 
-const db: { Sequelize: typeof Sequelize, sequelize: any } = {
+const db = {
   Sequelize: Sequelize,
   sequelize: sequelize
 };
