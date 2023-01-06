@@ -1,0 +1,24 @@
+
+[qgtunnel.Mongo_DB]
+accept = "127.0.0.1:27017"
+connect = "heroku-bm8vkcm1-shard-00-00.7bnqa.mongodb.net:27017"
+encrypted = false
+transparent = true
+
+[qgtunnel.Mongo_DB_1]
+accept = "127.0.0.2:27017"
+connect = "heroku-bm8vkcm1-shard-00-02.7bnqa.mongodb.net:27017"
+encrypted = false
+transparent = true
+
+[qgtunnel.Mongo_DB_2]
+accept = "127.0.0.3:27017"
+connect = "heroku-bm8vkcm1-shard-00-01.7bnqa.mongodb.net:27017"
+encrypted = false
+transparent = true
+
+[qgtunnel.Mysql_server]
+accept = "127.0.0.1:1433"
+connect = "31.154.79.242:1433"
+encrypted = false
+transparent = true
