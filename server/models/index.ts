@@ -10,8 +10,11 @@ const sequelize = new Sequelize(env.DB_NAME, env.DB_USERNAME, env.DB_PASSWORD, {
   host: env.DB_HOST,
   port: env.DB_PORT,
   logging: true,
-  dialectOptions: {
-    timeout: 120,
+  pool: {
+    max: 5,
+    min: 0,
+    acquire: 30000,
+    idle: 10000
   }
 });
 
