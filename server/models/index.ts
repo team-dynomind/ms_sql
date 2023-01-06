@@ -6,7 +6,7 @@ dotenv.config();
 const env = validateEnv();
 
 const sequelize = new Sequelize(env.DB_NAME, env.DB_USERNAME, env.DB_PASSWORD, {
-  dialect: "mysql",
+  dialect: "mssql",
   host: env.DB_HOST,
   port: env.DB_PORT,
   logging: true,
